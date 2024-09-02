@@ -2,7 +2,8 @@ import { makeAutoObservable, configure } from 'mobx'
 import { createContext } from 'react'
 import { Region, RegionData, User } from '../../interface/game'
 import { GameMapData } from '../data/MappedData'
-import data from '../../resourcesData/dataBase.json'
+// import data from '../../resourcesData/dataBase.json'
+import { data } from '../../resourcesData/dataBaseTs'
 import { yellowUsersData } from '../data/UsersData'
 
 configure({
@@ -12,7 +13,7 @@ configure({
 class GameStore {
     gameRegions: Region[][] = GameMapData
 
-    regionsData: Record<string, RegionData> = data
+    // regionsData: Record<string, RegionData> = data
     // regionsData: Record<string, RegionData> = {}
 
     yellowUsers: User[] = yellowUsersData
@@ -25,7 +26,9 @@ class GameStore {
 
     get regionData(): RegionData | null {
         if (this.selectedRegion) {
-            return this.regionsData[this.selectedRegion]
+            // return this.regionsData[this.selectedRegion]
+            //@ts-ignore
+            return data[this.selectedRegion]
         }
         return null
     }
@@ -35,11 +38,13 @@ class GameStore {
     }
 
     getQuestsNumber(regionName: string) {
-        return this.regionsData[regionName] ? this.regionsData[regionName].questsNumber : 0
+        //@ts-ignore
+        const somet = data[regionName]
+        return somet ? somet.questsNumber : 0
     }
 
     setRegionsData(data: Record<string, RegionData>) {
-        this.regionsData = data
+        // this.regionsData = data
     }
 }
 
