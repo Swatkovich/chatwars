@@ -11,5 +11,10 @@ export interface RegionData {
     successQuestsNumber: number
     expirience: number
     gold: number
-    resources: { [key: string]: number }
+    resources: Record<string, number>
+}
+
+export interface User {
+    nickNames: Array<string>
+    time: Array<string>
 }

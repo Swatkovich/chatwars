@@ -6,8 +6,9 @@ export const GridElement = styled('div')({
     justifyContent: 'center',
     border: '1px solid white',
     aspectRatio: 1 / 1,
-    fontSize: '1.5vw',
+    fontSize: '1.25vw',
     position: 'relative',
+    cursor: 'pointer',
 })
 
 export const ResourceIcon = styled('div')({
@@ -21,5 +22,11 @@ export const ElementName = styled('div')({
     position: 'absolute',
     top: 0,
     right: 0,
+    fontSize: '0.75vw',
+})
+
+export const QuestsNumber = styled('div')({
+    position: 'absolute',
+    bottom: 0,
     fontSize: '0.75vw',
 })

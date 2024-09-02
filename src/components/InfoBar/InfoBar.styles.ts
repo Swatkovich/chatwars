@@ -9,27 +9,15 @@ export const Wrapper = styled('div')({
     alignItems: 'center',
     fontFamily:
         "'Inter', 'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+    paddingBottom: '3vw',
 })
 
 export const Title = styled('div')({
     fontSize: '2vw',
-    marginLeft: 'auto',
-    marginRight: 'auto',
     marginBottom: '10px',
 })
 
-export const UserElement = styled('div')({
-    display: 'flex',
-    flexFlow: 'column',
-    marginBottom: '20px',
-    alignItems: 'center',
-})
-
-export const UserName = styled('div')({
+export const InfoElement = styled('div')({
     fontSize: '1vw',
-    fontWeight: 'bold',
-})
-
-export const UserTime = styled('div')({
-    fontSize: '1vw',
+    marginBottom: '10px',
 })
