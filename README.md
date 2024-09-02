@@ -1,2 +1,1 @@
-# kuda
-tuda
+Resources calculation
