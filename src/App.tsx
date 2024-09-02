@@ -13,8 +13,9 @@ const App: FC = observer(() => {
     const { setRegionsData } = gameStore
 
     useEffect(() => {
-        const data = main()
-        setRegionsData(data)
+        // const data = main()
+        // const
+        // setRegionsData(data)
     }, [setRegionsData])
 
     return (

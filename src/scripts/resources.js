@@ -62,6 +62,8 @@ async function main() {
     }
 }
 
+main()
+
 function readJsonFile(filePath) {
     return new Promise((resolve, reject) => {
         fs.readFile(filePath, 'utf8', (err, data) => {
@@ -81,6 +83,11 @@ function readJsonFile(filePath) {
 async function saveExploration(explorationData) {
     const dataBase = await loadDataBase()
     const dataBaseRegion = dataBase[explorationData.regionName]
+    if (explorationData.regionName === 'Y 6#6') {
+        console.log('here2')
+        console.log(explorationData)
+        console.log(dataBaseRegion)
+    }
     if (dataBaseRegion) {
         const updatedDataBaseRegion = dataBaseRegion
         updatedDataBaseRegion.questsNumber += explorationData.questsNumber
@@ -99,9 +106,20 @@ async function saveExploration(explorationData) {
         }
         dataBase[explorationData.regionName] = updatedDataBaseRegion
     } else {
+        if (explorationData.regionName === 'Y 6#6') {
+            console.log('here3')
+        }
         dataBase[explorationData.regionName] = explorationData
+        if (explorationData.regionName === 'Y 6#6') {
+            console.log('here4')
+            console.log(dataBase['Y 6#6'])
+        }
     }
     const sortedDataBase = await sortDataBase(dataBase)
+    if (explorationData.regionName === 'Y 6#6') {
+        console.log('here5')
+        console.log(sortedDataBase['Y 6#6'])
+    }
     return await new Promise((resolve, reject) => {
         fs.writeFile(dataBasePath, JSON.stringify(sortedDataBase, null, 2), 'utf8', (err) => {
             if (err) {
@@ -180,7 +198,7 @@ class Exploration {
         this.successQuestsNumber = 0
         this.expirience = 0
         this.gold = 0
-        this.resources = new Map()
+        this.resources = {}
     }
 }
 
@@ -218,8 +236,9 @@ function parseExplorations(explorationsComplete) {
             let j = 7
             while (exploration[j] && exploration[j].text) {
                 let resource = regexResource(exploration[j].text)
+
                 if (!forbidenResources.includes(resource[0])) {
-                    parsedExploration.resources.set(resource[0], resource[1])
+                    parsedExploration.resources[resource[0]] = resource[1]
                 }
                 j += 2
             }

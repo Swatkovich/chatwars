@@ -2,7 +2,7 @@ import { makeAutoObservable, configure } from 'mobx'
 import { createContext } from 'react'
 import { Region, RegionData, User } from '../../interface/game'
 import { GameMapData } from '../data/MappedData'
-// import data from '../../resourcesData/dataBase.json'
+import data from '../../resourcesData/dataBase.json'
 import { yellowUsersData } from '../data/UsersData'
 
 configure({
@@ -12,8 +12,8 @@ configure({
 class GameStore {
     gameRegions: Region[][] = GameMapData
 
-    // regionsData: Record<string, RegionData> = data
-    regionsData: Record<string, RegionData> = {}
+    regionsData: Record<string, RegionData> = data
+    // regionsData: Record<string, RegionData> = {}
 
     yellowUsers: User[] = yellowUsersData
 
