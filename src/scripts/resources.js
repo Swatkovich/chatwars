@@ -1,13 +1,5 @@
 const fs = require('fs')
 const path = require('path')
-// import result0 from '../resourcesData/result0.json'
-// import result1 from '../resourcesData/result1.json'
-// import result2 from '../resourcesData/result2.json'
-// import result3 from '../resourcesData/result3.json'
-// import result4 from '../resourcesData/result4.json'
-// import result5 from '../resourcesData/result5.json'
-// import result6 from '../resourcesData/result6.json'
-// import result7 from '../resourcesData/result7.json'
 
 const resources = {}
 
