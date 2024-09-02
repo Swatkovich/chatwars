@@ -6,8 +6,14 @@ export const data = {
         expirience: 7745,
         gold: 7702,
         resources: {
-            Wrapping: 1,
-            Thread: 1,
+            Pelt: 558,
+            Cloth: 475,
+            'Mutton Cut': 361,
+            Thread: 264,
+            Wrapping: 172,
+            'Lamb Fillet': 139,
+            'Superior Mutton Slice': 35,
+            Stick: 18,
         },
     },
     'Y 3#4': {
@@ -17,7 +23,12 @@ export const data = {
         expirience: 3342,
         gold: 2037,
         resources: {
-            Powder: 1,
+            Coal: 186,
+            'Iron Ore': 179,
+            Powder: 121,
+            Wrapping: 36,
+            'Scroll of Escape': 27,
+            Stick: 8,
         },
     },
     'Y 3#2': {
@@ -27,9 +38,11 @@ export const data = {
         expirience: 2611,
         gold: 1981,
         resources: {
-            Stick: 5,
-            'Wooden arrow': 2,
-            Charcoal: 2,
+            Charcoal: 233,
+            Stick: 228,
+            'Wooden arrow': 212,
+            Bone: 93,
+            Wrapping: 16,
         },
     },
     'Y 2#3': {
@@ -39,8 +52,10 @@ export const data = {
         expirience: 2208,
         gold: 1873,
         resources: {
-            Stick: 4,
-            'Wooden arrow': 2,
+            Stick: 319,
+            'Wooden arrow': 185,
+            Pelt: 157,
+            'Stone of Prime': 19,
         },
     },
     'Y 2#1': {
@@ -50,7 +65,11 @@ export const data = {
         expirience: 455,
         gold: 274,
         resources: {
-            'Iron Ore': 4,
+            'Iron Ore': 103,
+            'Scroll of Escape': 6,
+            Wrapping: 3,
+            Powder: 2,
+            Stick: 1,
         },
     },
     'Y 4#1': {
@@ -60,7 +79,10 @@ export const data = {
         expirience: 358,
         gold: 216,
         resources: {
-            Wrapping: 1,
+            Powder: 10,
+            Wrapping: 4,
+            Stick: 2,
+            'Stone of Prime': 2,
         },
     },
     'Y 1#1': {
@@ -70,7 +92,10 @@ export const data = {
         expirience: 291,
         gold: 278,
         resources: {
-            Stick: 2,
+            Stick: 54,
+            'Fresh Grapes': 21,
+            'Grape Juice': 7,
+            'Grape Essence': 3,
         },
     },
     'GY 2': {
@@ -80,8 +105,12 @@ export const data = {
         expirience: 201,
         gold: 152,
         resources: {
-            Bone: 2,
-            'Wooden arrow': 2,
+            'Wooden arrow': 28,
+            Bone: 16,
+            'Poor Meat Cut': 7,
+            Powder: 5,
+            Thread: 4,
+            Stick: 1,
         },
     },
     'Y 2#2': {
@@ -90,7 +119,13 @@ export const data = {
         successQuestsNumber: 26,
         expirience: 168,
         gold: 140,
-        resources: {},
+        resources: {
+            Thread: 33,
+            'Wooden arrow': 21,
+            Powder: 19,
+            'Sour Mushroom': 15,
+            'Forest Mushroom': 5,
+        },
     },
     'GY 4': {
         regionName: 'GY 4',
@@ -99,7 +134,10 @@ export const data = {
         expirience: 147,
         gold: 82,
         resources: {
-            'Iron Ore': 2,
+            'Iron Ore': 15,
+            Wrapping: 1,
+            'Scroll of Escape': 1,
+            Powder: 1,
         },
     },
     'Y 2#5': {
@@ -108,7 +146,15 @@ export const data = {
         successQuestsNumber: 18,
         expirience: 126,
         gold: 95,
-        resources: {},
+        resources: {
+            'Sour Mushroom': 4,
+            Thread: 4,
+            Powder: 2,
+            Stick: 2,
+            'Wooden arrow': 1,
+            'Forest Mushroom': 1,
+            Truffle: 1,
+        },
     },
     'Y 1#5': {
         regionName: 'Y 1#5',
@@ -117,7 +163,8 @@ export const data = {
         expirience: 123,
         gold: 63,
         resources: {
-            'Iron Ore': 2,
+            'Iron Ore': 11,
+            Wrapping: 1,
         },
     },
     'Y 1#2': {
@@ -127,7 +174,10 @@ export const data = {
         expirience: 122,
         gold: 102,
         resources: {
-            Stick: 1,
+            Stick: 26,
+            'Wooden arrow': 17,
+            Pelt: 9,
+            'Stone of Prime': 1,
         },
     },
     'Y 1#3': {
@@ -137,10 +187,14 @@ export const data = {
         expirience: 94,
         gold: 63,
         resources: {
-            Pelt: 5,
-            Wrapping: 2,
-            Powder: 2,
-            'Goat Milk': 5,
+            Pelt: 11,
+            Powder: 10,
+            'Goat Milk': 9,
+            Wrapping: 4,
+            'Iron Ore': 4,
+            Thread: 3,
+            'Goat Cheese': 2,
+            'Soft Cheese': 2,
         },
     },
     'GY 3': {
@@ -149,7 +203,14 @@ export const data = {
         successQuestsNumber: 16,
         expirience: 105,
         gold: 123,
-        resources: {},
+        resources: {
+            Pelt: 14,
+            Cloth: 7,
+            'Mutton Cut': 6,
+            Thread: 5,
+            'Lamb Fillet': 4,
+            Wrapping: 2,
+        },
     },
     'Y 3#5': {
         regionName: 'Y 3#5',
@@ -157,7 +218,13 @@ export const data = {
         successQuestsNumber: 14,
         expirience: 92,
         gold: 62,
-        resources: {},
+        resources: {
+            Stick: 4,
+            'Common Apple': 1,
+            'Wooden arrow': 1,
+            'Stone of Prime': 1,
+            'Enchanted Apple': 1,
+        },
     },
     'Y 5#5': {
         regionName: 'Y 5#5',
@@ -165,7 +232,12 @@ export const data = {
         successQuestsNumber: 14,
         expirience: 90,
         gold: 79,
-        resources: {},
+        resources: {
+            Bone: 4,
+            Powder: 3,
+            'Chicken Breast': 3,
+            'Chicken Egg': 2,
+        },
     },
     'Y 1#4': {
         regionName: 'Y 1#4',
@@ -173,7 +245,12 @@ export const data = {
         successQuestsNumber: 11,
         expirience: 70,
         gold: 48,
-        resources: {},
+        resources: {
+            Wheat: 7,
+            Powder: 6,
+            Rye: 4,
+            'Golden Barley': 2,
+        },
     },
     'Y 2#4': {
         regionName: 'Y 2#4',
@@ -190,11 +267,12 @@ export const data = {
         expirience: 70,
         gold: 82,
         resources: {
-            'Lamb Fillet': 1,
-            'Mutton Cut': 2,
+            Pelt: 7,
+            'Mutton Cut': 5,
             Cloth: 3,
             Thread: 2,
-            Pelt: 1,
+            Wrapping: 2,
+            'Lamb Fillet': 2,
         },
     },
     'Y 5#3': {
@@ -203,7 +281,13 @@ export const data = {
         successQuestsNumber: 12,
         expirience: 87,
         gold: 32,
-        resources: {},
+        resources: {
+            Thread: 2,
+            'Iron Ore': 2,
+            'Goat Cheese': 1,
+            Wrapping: 1,
+            Pelt: 1,
+        },
     },
     'Y 3#1': {
         regionName: 'Y 3#1',
@@ -212,8 +296,9 @@ export const data = {
         expirience: 58,
         gold: 55,
         resources: {
-            Pelt: 1,
-            Stick: 1,
+            Stick: 7,
+            Pelt: 5,
+            'Wooden arrow': 2,
         },
     },
     'Y 5#4': {
@@ -222,7 +307,10 @@ export const data = {
         successQuestsNumber: 9,
         expirience: 57,
         gold: 54,
-        resources: {},
+        resources: {
+            Stick: 2,
+            Pelt: 1,
+        },
     },
     'G 2#1': {
         regionName: 'G 2#1',
@@ -231,8 +319,12 @@ export const data = {
         expirience: 61,
         gold: 71,
         resources: {
+            Powder: 5,
+            Wheat: 4,
+            Rye: 2,
             Wrapping: 1,
             Stick: 1,
+            'Golden Barley': 1,
         },
     },
     'YB 2': {
@@ -241,7 +333,12 @@ export const data = {
         successQuestsNumber: 6,
         expirience: 40,
         gold: 15,
-        resources: {},
+        resources: {
+            Pelt: 8,
+            'Iron Ore': 4,
+            Thread: 3,
+            Powder: 3,
+        },
     },
     'YB 4': {
         regionName: 'YB 4',
@@ -249,7 +346,9 @@ export const data = {
         successQuestsNumber: 6,
         expirience: 40,
         gold: 49,
-        resources: {},
+        resources: {
+            Wheat: 4,
+        },
     },
     'Y 5#1': {
         regionName: 'Y 5#1',
@@ -258,7 +357,9 @@ export const data = {
         expirience: 49,
         gold: 43,
         resources: {
-            Stick: 1,
+            Stick: 3,
+            'Wooden arrow': 3,
+            Pelt: 1,
         },
     },
     'YB 3': {
@@ -268,7 +369,8 @@ export const data = {
         expirience: 44,
         gold: 32,
         resources: {
-            Powder: 2,
+            Powder: 8,
+            Coal: 5,
         },
     },
     'Y 6#6': {
@@ -298,7 +400,9 @@ export const data = {
         successQuestsNumber: 5,
         expirience: 36,
         gold: 41,
-        resources: {},
+        resources: {
+            Wrapping: 1,
+        },
     },
     'Y 6#1': {
         regionName: 'Y 6#1',
@@ -307,9 +411,10 @@ export const data = {
         expirience: 39,
         gold: 21,
         resources: {
+            'Poor Meat Cut': 2,
             Powder: 1,
             Pelt: 1,
-            'Poor Meat Cut': 2,
+            'Wooden arrow': 1,
         },
     },
     'G 3#1': {
@@ -319,6 +424,7 @@ export const data = {
         expirience: 12,
         gold: 8,
         resources: {
+            Wheat: 4,
             Powder: 2,
         },
     },

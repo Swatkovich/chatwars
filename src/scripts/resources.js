@@ -83,20 +83,15 @@ function readJsonFile(filePath) {
 async function saveExploration(explorationData) {
     const dataBase = await loadDataBase()
     const dataBaseRegion = dataBase[explorationData.regionName]
-    if (explorationData.regionName === 'Y 6#6') {
-        console.log('here2')
-        console.log(explorationData)
-        console.log(dataBaseRegion)
-    }
     if (dataBaseRegion) {
         const updatedDataBaseRegion = dataBaseRegion
         updatedDataBaseRegion.questsNumber += explorationData.questsNumber
         updatedDataBaseRegion.successQuestsNumber += explorationData.successQuestsNumber
         updatedDataBaseRegion.expirience += explorationData.expirience
         updatedDataBaseRegion.gold += explorationData.gold
-        if (explorationData.resources.size > 0) {
-            for (const [key, value] of explorationData.resources) {
-                if (dataBaseRegion.resources[key]) {
+        if (Object.keys(explorationData.resources).length > 0) {
+            for (const [key, value] of Object.entries(explorationData.resources)) {
+                if (updatedDataBaseRegion.resources[key]) {
                     updatedDataBaseRegion.resources[key] += value
                 } else {
                     updatedDataBaseRegion.resources[key] = value
@@ -106,20 +101,9 @@ async function saveExploration(explorationData) {
         }
         dataBase[explorationData.regionName] = updatedDataBaseRegion
     } else {
-        if (explorationData.regionName === 'Y 6#6') {
-            console.log('here3')
-        }
         dataBase[explorationData.regionName] = explorationData
-        if (explorationData.regionName === 'Y 6#6') {
-            console.log('here4')
-            console.log(dataBase['Y 6#6'])
-        }
     }
     const sortedDataBase = await sortDataBase(dataBase)
-    if (explorationData.regionName === 'Y 6#6') {
-        console.log('here5')
-        console.log(sortedDataBase['Y 6#6'])
-    }
     return await new Promise((resolve, reject) => {
         fs.writeFile(dataBasePath, JSON.stringify(sortedDataBase, null, 2), 'utf8', (err) => {
             if (err) {

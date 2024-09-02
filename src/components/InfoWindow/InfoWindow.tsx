@@ -30,6 +30,9 @@ const InfoWindow = observer(() => {
             <InfoElement>
                 {`Количество успешных квестов: `}{' '}
                 <InfoElement style={{ fontWeight: 'bold' }}>{regionData ? regionData.successQuestsNumber : 0}</InfoElement>
+                <InfoElement style={{ color: regionData ? setColor(regionData.successQuestsNumber) : 'black', fontWeight: 'bold' }}>
+                    ({regionData ? Math.round(((regionData.successQuestsNumber / regionData.questsNumber) * 1000) / 10) : 0}%)
+                </InfoElement>
             </InfoElement>
             <InfoElement>
                 {`Среднее 📖 за успешный квест: `}
