@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/chatwars/static/css/main.77246dd1.css",
-    "main.js": "/chatwars/static/js/main.a5c05090.js",
+    "main.js": "/chatwars/static/js/main.84dea21a.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/chatwars/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/chatwars/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/chatwars/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -53,10 +53,10 @@
     "static/media/inter-vietnamese-400-normal.woff2": "/chatwars/static/media/inter-vietnamese-400-normal.789afb71d327988e2fc8.woff2",
     "index.html": "/chatwars/index.html",
     "main.77246dd1.css.map": "/chatwars/static/css/main.77246dd1.css.map",
-    "main.a5c05090.js.map": "/chatwars/static/js/main.a5c05090.js.map"
+    "main.84dea21a.js.map": "/chatwars/static/js/main.84dea21a.js.map"
   },
   "entrypoints": [
     "static/css/main.77246dd1.css",
-    "static/js/main.a5c05090.js"
+    "static/js/main.84dea21a.js"
   ]
 }
